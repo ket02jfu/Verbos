@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #fa8f5183;
+}
+
+*::selection {
+    color: white;
+    background: #c8414aca;
+    text-shadow: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Media*/
+
+/******************/
+
+
+
+/*Позиционирование*/
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/******************/
+
+
+/*Header*/
+.toggel-btn {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    width: 35px;
+    position: absolute;
+    right: 108px;
+    top: 66px;
+    display: none;
+}
+
+.toggel-btn span {
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 98, 119);
+    float: left;
+    margin-bottom: 7px;
+}
+
+@media(max-width: 785px) {
+
+    .toggel-btn{
+        
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        border-top: 1px solid rgb(255, 98, 119);
+        padding-top: 20px;
+        margin-top: 30px;
+        
+    }
+    nav ul li{
+        padding: 1px 0;
+        width: 100%;
+    }
+    nav.show{
+        display: block;
+    }
+
+}
+@media (max-width: 597px) {
+    #logo p{
+        display: none;
+    }
+}
+
+#header-container {
+    background-color: rgb(255, 227, 227);
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 25px 80px;
+    position: relative;
+    box-shadow: 0px 2px 5px gray;
+}
+
+
+#logo {
+    float: left;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transition: all .3s ease-in-out;
+}
+
+.spainlogo-photo {
+    width: 90px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+#logo p {
+    font-size: 24px;
+    font-weight: 550;
+    color: rgb(255, 98, 119);
+    margin-right: 5px;
+    transition: all .3s ease-in-out;
+}
+
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 33px 25px;
+}
+nav.show{
+    transition: 0.3s ease-in-out;
+}
+nav ul li a {
+    display: inline-block;
+    color: rgb(255, 98, 119);
+    font-weight: 550;
+    font-size: 24px;
+}
+
+/******************/

@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #fa8f5183;
+    background-color: white;
 }
 
 *::selection {
@@ -62,7 +62,7 @@ a {
     margin-bottom: 7px;
 }
 
-@media(max-width: 785px) {
+@media(max-width: 799px) {
 
     .toggel-btn{
         
@@ -93,7 +93,7 @@ a {
 }
 
 #header-container {
-    background-color: rgb(255, 227, 227);
+    background-color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     width: 100%;
     padding: 25px 80px;
@@ -119,7 +119,7 @@ a {
 #logo p {
     font-size: 24px;
     font-weight: 550;
-    color: rgb(255, 98, 119);
+    color: rgb(197, 46, 66);
     margin-right: 5px;
     transition: all .3s ease-in-out;
 }
@@ -133,14 +133,20 @@ nav ul li {
     display: inline-block;
     padding: 33px 25px;
 }
+
+
 nav.show{
     transition: 0.3s ease-in-out;
 }
 nav ul li a {
     display: inline-block;
-    color: rgb(255, 98, 119);
+    color: #2A2A2A;
     font-weight: 550;
     font-size: 24px;
+    transition: 0.3s all ease-in-out;
 }
-
+nav ul li a:hover{
+    color: rgb(197, 46, 66);
+    transform: translateY(-4px);
+}
 /******************/
